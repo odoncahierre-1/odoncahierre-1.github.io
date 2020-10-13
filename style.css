@@ -29,7 +29,7 @@ p{
     font-size: 32px;
     position:absolute;
     transition: .5s ease;
-    top: 50%;
+    top: 350px;
     left: 22%;
 }
 .button1{
@@ -43,7 +43,7 @@ p{
     font-size: 32px;
     position:absolute;
     transition: .5s ease;
-    top: 50%;
+    top: 350px;
     left: 62%;
 }
 
