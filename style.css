@@ -58,9 +58,7 @@ p{
     font-size: 32px;
     position:absolute;
     transition: .5s ease;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    float: center;
     top: 1050px;
 
 }
