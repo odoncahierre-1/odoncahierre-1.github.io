@@ -54,11 +54,13 @@ p{
     padding: 12px 48px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 32px;
     position:absolute;
     transition: .5s ease;
-    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
     top: 1050px;
 
 }
