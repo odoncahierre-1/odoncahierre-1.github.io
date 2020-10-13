@@ -1,70 +1,113 @@
-<!DOCTYPES html>
-
-<html>
-    <style>
-
-    div.a {
-
-    text-align: center;
-
-    }
-
-    </style>
-
-
-
-    <style>
-
-        div.b {
-
-            text-align: left;
-
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                          // Add smooth scrolling to all links
+                          $("a").on('click', function(event) {
+                                    
+                                    // Make sure this.hash has a value before overriding default behavior
+                                    if (this.hash !== "") {
+                                    // Prevent default anchor click behavior
+                                    event.preventDefault();
+                                    
+                                    // Store hash
+                                    var hash = this.hash;
+                                    
+                                    // Using jQuery's animate() method to add smooth page scroll
+                                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                                    $('html, body').animate({
+                                                            scrollTop: $(hash).offset().top
+                                                            }, 800, function(){
+                                                            
+                                                            // Add hash (#) to URL when done scrolling (default click behavior)
+                                                            window.location.hash = hash;
+                                                            });
+                                    } // End if
+                                    });
+                          });
+        </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            #section1 {
+                height: 700px;
+                background-color: black;
+            }
+        
+        #section2 {
+            height: 700px;
+            background-color: black;
         }
-
-    </style>
-
-    <div class="a">
-
-    <title>OdonCahierre</title>
-
-    <header> <h1><br><br>Odon Cahierre<br><br></h1>
-
-
-
-    <!--<a href="Resume.html">About Me</a>-->
-
-    <body>
-
-    <p><pre>CoronaCatcher app                                          Who I am                                                 Other Projects</pre></p>
-
-    <a href="Resume.html">
-
-
-
-        <img   src="logo copy.png" alt="Apps!" style="width:375px;height:500px;border:0;text-align:left;float:left;">
-
-       </a>
-
-    <a href="whoIAm.html">
-
-        <img src="me.jpg" alt="resume" style="width:375px;height:500px;border:0; text-align:center;float:center;">
-
-        </a>
-
-    <a href="future.html">
-
-        <img src="cookie.png" alt="Other" style="width:375px;height:500px;border:0;text-align: right;float:right;">
-
-            </a>
-
-
-
-
-
-
-
-
-
-    </body>
-
+        #section3 {
+            height: 700px;
+            background-color: black;
+        }
+        </style>
+</head>
+<body>
+    <div class="main" id="section1">
+        <title>Odon Cahierre</title>
+        <h1>Odon Cahierre</h1>
+        
+        <h2> Welcome to my website! </h2>
+        
+        
+       <!-- <a href="#" class="myButton" onclick="document.getElementById('id01').style.display='block'">Login</a> -->
+        <br><br><br><br>
+        <a href="#section2" class="button">Who I am</a>
+        <a href="#section3" class="button1">My Projects</a>
+        
+    </div>
+    
+    <div class="main" id="section2">
+        <h1>Who I am</h1>
+        <p>My name is Odon Cahierre. Born in Paris, I've lived in Japan and Los Angeles throughout my
+        life and am now a student at Cornell University. I am very interested in environmental
+        science and especially the environmental problems surrounding transportation of all things. I
+        hope to use my international background to help solve environmental problems in the U.S. and
+        abroad. While my main passion are these environmental problems, I always like to challenge
+        myself with new projects and explore my creativity. I built this website to further my understanding of web
+        design and to have a platform where all my different endevours can be accessed. This page is
+        where my resume and other information about me can be accessed.<p>
+        
+        <button class = "button2" href = "WhoIAm.html" >Click here for resume and more Info</button>
+        
+    </div>
+    <div class="main" id="section3">
+         <h1>My Projects</h1>
+         <p>This is where you can find what projects I am currently working on! I am currently finishing up and submitting an App called Corona Catcher to the ios Appstore that you can check out more info by clicking the button. I am also currently making a python based stock trading algorithm that will analyze patterns to complete short term trades. </p>
+         
+         <button class = "button3" href = "Resume.html" >CoronaCatcher</button>
+         <button class = "button4" href = "future.html" >Other Projects</button>
+    </div>
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+        
+        <!-- Modal Content -->
+       <!-- <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <img src="1.png"  class="avatar">
+                    </div>
+            
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                        </div>
+            
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div> -->
+        </form>
+        
+</body>
 </html>

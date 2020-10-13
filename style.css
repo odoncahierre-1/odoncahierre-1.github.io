@@ -1,0 +1,166 @@
+h1 {
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+h2 {
+    padding-top: 50px;
+    text-align:center;
+    
+    color: white;
+}
+
+p{
+    color:white;
+}
+.button{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 12px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    position:absolute;
+    transition: .5s ease;
+    top: 50%;
+    left: 22%;
+}
+.button1{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 12px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    position:absolute;
+    transition: .5s ease;
+    top: 50%;
+    left: 62%;
+}
+
+.button2{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 12px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    position:absolute;
+    transition: .5s ease;
+    left: 32%;
+    top: 1050px;
+    
+}
+
+.button3{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 12px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    position:absolute;
+    transition: .5s ease;
+    left: 15%;
+    top: 1750px;
+}
+
+.button4{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 12px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    position:absolute;
+    transition: .5s ease;
+    left: 62%;
+    top: 1750px;
+}
+
+
+.myButton{
+    background-color: #008CBA
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    font-size: 12px;
+    top: 3%;
+    right: 3%;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
